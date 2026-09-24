@@ -12,7 +12,6 @@ RUN apt-get update && apt-get upgrade -qy && \
 		texlive-bibtex-extra \
 		texlive-luatex \
 		texlive-xetex \
-		texlive-lang-french \
-		texlive-lang-german && \
+		texlive-lang-french && \
 	apt-get clean -qy && \
     rm -rf /var/lib/apt/lists/*
