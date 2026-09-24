@@ -1,4 +1,4 @@
-FROM debian:forky
+FROM debian:forky-slim
 ENV DEBIAN_FRONTEND=noninteractive
 # Install missing OS packages
 RUN apt-get update && apt-get upgrade -qy && \
