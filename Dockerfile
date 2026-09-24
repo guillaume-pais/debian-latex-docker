@@ -1,0 +1,18 @@
+FROM debian:14
+ENV DEBIAN_FRONTEND=noninteractive
+# Install missing OS packages
+RUN apt-get update && apt-get upgrade -qy && \
+	apt-get install -qy \
+		fonts-adobe-sourcesans3 \
+		fonts-roboto \
+		texlive-latex-base \
+		texlive-fonts-recommended \
+		texlive-fonts-extra \
+		texlive-latex-extra \
+		texlive-bibtex-extra \
+		texlive-luatex \
+		texlive-xetex \
+		texlive-lang-french \
+		texlive-lang-german && \
+	apt-get clean -qy && \
+    rm -rf /var/lib/apt/lists/*
