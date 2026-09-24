@@ -1,4 +1,4 @@
-FROM debian:14
+FROM debian:forky
 ENV DEBIAN_FRONTEND=noninteractive
 # Install missing OS packages
 RUN apt-get update && apt-get upgrade -qy && \
